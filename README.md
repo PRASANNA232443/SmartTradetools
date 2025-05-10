@@ -315,8 +315,7 @@
 
 
     <!-- Leverage Calculator Section -->
-    <section class="card" id="leverage-calculator">
-      <h2>Leverage Calculator</h2>
+  
 
       <!-- RR Section -->
       <div class="rr-box">
@@ -375,11 +374,7 @@
 
 
 
-
-  <div class="container">
-    <header>
-      <h1>Leverage Calcutator</h1>
-    </header>
+    
 
 
 
