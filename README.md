@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -314,13 +315,20 @@
 
 
 
+
+
+
+  <div class="container">
+    <header>
+      <h1>SmartTrade Tools</h1>
+    </header>
+
+
+
+
     <!-- Leverage Calculator Section -->
-
-
-
-     <section class="card" id="leverage-calculator">
+    <section class="card" id="leverage-calculator">
       <h2>Leverage Calculator</h2>
-  
 
       <!-- RR Section -->
       <div class="rr-box">
@@ -376,14 +384,6 @@
 
 
       <div class="form-group">
-
-
-
-    
-
-
-
-      
         <label for="capital">Capital (USDT):</label>
         <div class="input-group">
           <input type="number" id="capital" placeholder="Enter your total capital" autocomplete="off">
@@ -422,6 +422,12 @@
         <div class="result-value">Leverage = ?</div>
       </div>
     </section>
+
+
+
+
+
+
 
     <!-- Scaled TP Calculator Section -->
     <section class="card" id="scaled-tp-section">
