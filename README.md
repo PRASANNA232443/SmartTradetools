@@ -513,11 +513,15 @@
 
 
 
-      <div class="header-content">
-        <h1>SmartTrade Tools</h1>
-        <div class="header-subtitle">Optimize your trading strategy with our advanced calculators</div>
-      </div>
-    </header>
+    <div class="container">
+        <header>
+          <div class="header-content">
+            <h1>SmartTrade Tools</h1>
+            <div class="header-subtitle">Optimize your trading strategy with our advanced calculators</div>
+          </div>
+        </header>
+
+      
 
     <!-- RR Section -->
     <div class="rr-box">
