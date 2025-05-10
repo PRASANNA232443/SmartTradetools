@@ -315,6 +315,11 @@
 
 
     <!-- Leverage Calculator Section -->
+
+
+
+     <section class="card" id="leverage-calculator">
+      <h2>Leverage Calculator</h2>
   
 
       <!-- RR Section -->
