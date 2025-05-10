@@ -326,10 +326,7 @@
 
 
 
-    <!-- Leverage Calculator Section -->
-    <section class="card" id="leverage-calculator">
-      <h2>Leverage Calculator</h2>
-
+   
       <!-- RR Section -->
       <div class="rr-box">
         <h2>Risk/Reward Calculator</h2>
@@ -381,16 +378,11 @@
 
 
 
+ <section class="card" id="scaled-tp-section">
+      <h2>Leverage Calculator</h2>
 
 
       <div class="form-group">
-
-
-
-     <h2>Leverage Calculator</h2>
-
-
-      
         <label for="capital">Capital (USDT):</label>
         <div class="input-group">
           <input type="number" id="capital" placeholder="Enter your total capital" autocomplete="off">
