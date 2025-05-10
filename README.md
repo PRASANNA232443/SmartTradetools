@@ -314,6 +314,19 @@
 
 
 
+
+
+
+
+  <div class="container">
+    <header>
+      <h1>SmartTrade Tools</h1>
+    </header>
+
+
+
+
+    <!-- Leverage Calculator Section -->
     <section class="card" id="leverage-calculator">
       <h2>Leverage Calculator</h2>
 
@@ -371,6 +384,13 @@
 
 
       <div class="form-group">
+
+
+
+     <h2>Leverage Calculator</h2>
+
+
+      
         <label for="capital">Capital (USDT):</label>
         <div class="input-group">
           <input type="number" id="capital" placeholder="Enter your total capital" autocomplete="off">
