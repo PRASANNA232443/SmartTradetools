@@ -318,7 +318,10 @@
 
 
 
- 
+  <div class="container">
+    <header>
+      <h1>SmartTrade Tools</h1>
+    </header>
 
 
 
@@ -501,16 +504,8 @@
       </table>
 
       <div id="summary" class="summary"></div>
-    </section>
-
-
-
-
-
-
-
-
-
+     </div>
+	 </section>
 
 
 
