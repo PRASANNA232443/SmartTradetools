@@ -518,12 +518,14 @@
           <div class="header-content">
             <h1>SmartTrade Tools</h1>
             <div class="header-subtitle">Optimize your trading strategy with our advanced calculators</div>
+             <div class="header-subtitle">This tools created by Prasana indrajith</div>
+            
           </div>
         </header>
 
       
 
-    <!-- RR Section -->
+    
     <div class="rr-box">
       <div class="card-header">
         <div class="card-icon rr-icon">
@@ -568,7 +570,11 @@
       </div>
     </div>
 
-    <!-- Leverage Calculator Section -->
+
+
+
+
+  
     <section class="card">
       <div class="card-badge">Essential</div>
       <div class="card-header">
@@ -626,7 +632,17 @@
       </div>
     </section>
 
-    <!-- Scaled TP Calculator Section -->
+
+
+
+
+
+
+
+
+
+
+
     <section class="card">
       <div class="card-badge">Pro</div>
       <div class="card-header">
