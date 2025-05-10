@@ -513,13 +513,9 @@
 
 
 
-
-
-
-
-
-
-<div class="container">
+</head>
+<body>
+  <div class="container">
     <header>
       <div class="header-content">
         <h1>SmartTrade Tools</h1>
@@ -527,8 +523,7 @@
       </div>
     </header>
 
-
-<!-- RR Section -->
+    <!-- RR Section -->
     <div class="rr-box">
       <div class="card-header">
         <div class="card-icon rr-icon">
@@ -536,58 +531,44 @@
         </div>
         <h2>Risk/Reward Calculator</h2>
       </div>
-
-  
-
-              
-        <div class="two-columns">
-          <div class="column">
-            <div class="form-group">
-              <label for="entryPrice">Entry Price:</label>
-              <div class="input-group">
-                <input type="number" id="entryPrice" placeholder="Enter entry price" autocomplete="off">
-              </div>
-            </div>
-          </div>
-          
-          <div class="column">
-            <div class="form-group">
-              <label for="tpPrice">Full TP Price:</label>
-              <div class="input-group">
-                <input type="number" id="tpPrice" placeholder="Enter full take profit price" autocomplete="off">
-              </div>
+      
+      <div class="two-columns">
+        <div class="column">
+          <div class="form-group">
+            <label for="entryPrice"><i class="fas fa-sign-in-alt"></i> Entry Price:</label>
+            <div class="input-group">
+              <input type="number" id="entryPrice" placeholder="Enter entry price" autocomplete="off">
             </div>
           </div>
         </div>
-
-        <div class="form-group">
-          <label for="slPrice">Stop Loss Price:</label>
-          <div class="input-group">
-            <input type="number" id="slPrice" placeholder="Enter stop loss price" autocomplete="off">
-          </div>
-        </div>
-
-        <button type="button" class="btn btn-primary" onclick="calculateRR()">Calculate Risk/Reward</button>
         
-        <div class="result-box" id="rrResult">
-          <div class="result-value">Risk/Reward = ?</div>
+        <div class="column">
+          <div class="form-group">
+            <label for="tpPrice"><i class="fas fa-arrow-circle-up"></i> Full TP Price:</label>
+            <div class="input-group">
+              <input type="number" id="tpPrice" placeholder="Enter full take profit price" autocomplete="off">
+            </div>
+          </div>
         </div>
       </div>
 
+      <div class="form-group">
+        <label for="slPrice"><i class="fas fa-arrow-circle-down"></i> Stop Loss Price:</label>
+        <div class="input-group">
+          <input type="number" id="slPrice" placeholder="Enter stop loss price" autocomplete="off">
+        </div>
+      </div>
 
+      <button type="button" class="btn btn-primary" onclick="calculateRR()">
+        <i class="fas fa-calculator"></i> Calculate Risk/Reward
+      </button>
+      
+      <div class="result-box" id="rrResult">
+        <div class="result-value">Risk/Reward = ?</div>
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
- <!-- Leverage Calculator Section -->
+    <!-- Leverage Calculator Section -->
     <section class="card">
       <div class="card-badge">Essential</div>
       <div class="card-header">
@@ -597,9 +578,8 @@
         <h2>Leverage Calculator</h2>
       </div>
 
-
       <div class="form-group">
-        <label for="capital">Capital (USDT):</label>
+        <label for="capital"><i class="fas fa-coins"></i> Capital (USDT):</label>
         <div class="input-group">
           <input type="number" id="capital" placeholder="Enter your total capital" autocomplete="off">
         </div>
@@ -607,23 +587,29 @@
       </div>
 
       <div class="form-group">
-        <label for="marginSlider">Margin (%):</label>
+        <label for="marginSlider"><i class="fas fa-percentage"></i> Margin (%):</label>
         <div class="slider-container">
           <input type="range" id="marginSlider" min="0" max="100" value="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-          <div class="slider-value">Selected Margin: <span id="marginValue">0%</span></div>
+          <div class="slider-value">
+            <span>Margin</span>
+            <span class="value" id="marginValue">0%</span>
+          </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="riskSlider">Risk (%):</label>
+        <label for="riskSlider"><i class="fas fa-exclamation-triangle"></i> Risk (%):</label>
         <div class="slider-container">
           <input type="range" id="riskSlider" min="0" max="100" value="50" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-          <div class="slider-value">Selected Risk: <span id="riskValue">50%</span></div>
+          <div class="slider-value">
+            <span>Risk</span>
+            <span class="value" id="riskValue">50%</span>
+          </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="stopLoss">Stop Loss (%):</label>
+        <label for="stopLoss"><i class="fas fa-shield-alt"></i> Stop Loss (%):</label>
         <div class="input-with-label">
           <input type="number" id="stopLoss" placeholder="Enter stop loss percentage" autocomplete="off">
           <span>%</span>
@@ -631,22 +617,16 @@
         <small>The % of price movement that will trigger stop loss.</small>
       </div>
 
-      <button type="button" class="btn btn-primary" onclick="calculateLeverage()">Calculate Leverage</button>
+      <button type="button" class="btn btn-primary" onclick="calculateLeverage()">
+        <i class="fas fa-calculator"></i> Calculate Leverage
+      </button>
 
       <div class="result-box" id="result">
         <div class="result-value">Leverage = ?</div>
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-       <!-- Scaled TP Calculator Section -->
+    <!-- Scaled TP Calculator Section -->
     <section class="card">
       <div class="card-badge">Pro</div>
       <div class="card-header">
@@ -659,7 +639,7 @@
       <div class="two-columns">
         <div class="column">
           <div class="form-group">
-            <label for="balance">Account Balance (USDT):</label>
+            <label for="balance"><i class="fas fa-wallet"></i> Account Balance (USDT):</label>
             <div class="input-with-label">
               <input type="number" id="balance" value="100" autocomplete="off">
               <span>USDT</span>
@@ -669,7 +649,7 @@
         
         <div class="column">
           <div class="form-group">
-            <label for="risk">Risk per Trade (%):</label>
+            <label for="risk"><i class="fas fa-exclamation-triangle"></i> Risk per Trade (%):</label>
             <div class="input-with-label">
               <input type="number" id="risk" value="1" autocomplete="off">
               <span>%</span>
@@ -679,14 +659,14 @@
       </div>
       
       <div class="form-group">
-        <label for="rr">Risk-Reward Ratio (RR):</label>
+        <label for="rr"><i class="fas fa-balance-scale"></i> Risk-Reward Ratio (RR):</label>
         <input type="number" step="0.1" id="rr" value="2" autocomplete="off">
       </div>
 
       <div class="two-columns">
         <div class="column">
           <div class="form-group">
-            <label for="tp1">TP1 % of Full Position:</label>
+            <label for="tp1"><i class="fas fa-tag"></i> TP1 % of Full Position:</label>
             <div class="input-with-label">
               <input type="number" id="tp1" value="50" autocomplete="off">
               <span>%</span>
@@ -696,7 +676,7 @@
         
         <div class="column">
           <div class="form-group">
-            <label for="tp2">TP2 % of Remaining:</label>
+            <label for="tp2"><i class="fas fa-tag"></i> TP2 % of Remaining:</label>
             <div class="input-with-label">
               <input type="number" id="tp2" value="30" autocomplete="off">
               <span>%</span>
@@ -706,14 +686,16 @@
       </div>
 
       <div class="form-group">
-        <label for="tp3">TP3 % of Remaining:</label>
+        <label for="tp3"><i class="fas fa-tag"></i> TP3 % of Remaining:</label>
         <div class="input-with-label">
           <input type="number" id="tp3" value="20" autocomplete="off">
           <span>%</span>
         </div>
       </div>
 
-      <button type="button" class="btn btn-primary" onclick="calculateTP()">Calculate Scaled Take Profit</button>
+      <button type="button" class="btn btn-primary" onclick="calculateTP()">
+        <i class="fas fa-calculator"></i> Calculate Scaled Take Profit
+      </button>
 
       <table id="resultTable" style="display:none;">
         <thead>
@@ -729,6 +711,10 @@
 
       <div id="summary" class="summary"></div>
     </section>
+
+    <footer>
+      <p>© 2025 SmartTrade Tools | Version 2.0</p>
+    </footer>
   </div>
 
   <script>
@@ -784,11 +770,11 @@
       let fullTP = globalRR ? (riskUSD * globalRR).toFixed(2) : "?";
 
       document.getElementById("result").innerHTML = 
-        `<p><span class='emoji'>📊</span> Leverage = <span class='result-value'>${leverage}x</span></p>
-        <p><span class='emoji'>💵</span> Margin = <span class='result-value'>$${marginUSD.toFixed(2)}</span></p>
-        <p><span class='emoji'>⚠️</span> Risk = <span class='result-value'>$${riskUSD.toFixed(2)}</span></p>
-        <p><span class='emoji'>🔄</span> Trade Size = <span class='result-value'>$${tradeSize}</span></p>
-        <p><span class='emoji'>🎯</span> Full Take Profit = <span class='result-value'>$${fullTP}</span></p>`;
+        `<p><span class="icon-box"><i class="fas fa-chart-line"></i></span> Leverage = <span class='result-value'>${leverage}x</span></p>
+        <p><span class="icon-box"><i class="fas fa-coins"></i></span> Margin = <span class='result-value'>${marginUSD.toFixed(2)}</span></p>
+        <p><span class="icon-box"><i class="fas fa-exclamation-triangle"></i></span> Risk = <span class='result-value'>${riskUSD.toFixed(2)}</span></p>
+        <p><span class="icon-box"><i class="fas fa-exchange-alt"></i></span> Trade Size = <span class='result-value'>${tradeSize}</span></p>
+        <p><span class="icon-box"><i class="fas fa-bullseye"></i></span> Full Take Profit = <span class='result-value'>${fullTP}</span></p>`;
     }
 
     // Scaled TP Calculator Scripts
@@ -828,10 +814,7 @@
       document.getElementById("results").innerHTML = results;
       document.getElementById("resultTable").style.display = "table";
       document.getElementById("summary").innerHTML = 
-        `<p><span class='emoji'>⚠️</span> <b>Risk Amount(SL):</b> $${riskAmt.toFixed(2)}</p>
-        <p><span class='emoji'>📈</span> <b>Full Profit (No Scaling):</b> $${totalProfit.toFixed(2)}</p>
-        <p><span class='emoji'>🔻</span> <b>Scaled TP Profit:</b> $${totalScaled.toFixed(2)}</p>`;
+        `<p><span class="icon-box"><i class="fas fa-exclamation-triangle"></i></span> <b>Risk Amount(SL):</b> ${riskAmt.toFixed(2)}</p>
+        <p><span class="icon-box"><i class="fas fa-chart-line"></i></span> <b>Full Profit (No Scaling):</b> ${totalProfit.toFixed(2)}</p>
+        <p><span class="icon-box"><i class="fas fa-layer-group"></i></span> <b>Scaled TP Profit:</b> ${totalScaled.toFixed(2)}</p>`;
     }
-  </script>
-</body>
-</html>
