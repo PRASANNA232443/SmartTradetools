@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -317,11 +316,6 @@
 
 
 
-
-  <div class="container">
-    <header>
-      <h1>SmartTrade Tools</h1>
-    </header>
 
 
 
