@@ -516,7 +516,7 @@
   
         <header>
           <div class="header-content">
-            <h1>SmartTrade Tools</h1>
+            <h1>Smart Trade Tools</h1>
             <div class="header-subtitle">Optimize your trading strategy with our advanced calculators</div>
              <div class="header-subtitle">This tools created by Prasana indrajith</div>
             
@@ -731,7 +731,7 @@
     <footer>
       <p>© 2025 SmartTrade Tools | Version 2.0</p>
     </footer>
-  </div>
+  
 
   <script>
     // Leverage Calculator Scripts
