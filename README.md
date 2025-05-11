@@ -518,7 +518,7 @@
           <div class="header-content">
             <h1>Smart Trade Tools</h1>
             <div class="header-subtitle">Optimize your trading strategy with our advanced calculators</div>
-             <div class="header-subtitle">This tools created by Prasana indrajith</div>
+             <div class="header-subtitle">This tools created by Prasanna Indrajith</div>
             
           </div>
         </header>
